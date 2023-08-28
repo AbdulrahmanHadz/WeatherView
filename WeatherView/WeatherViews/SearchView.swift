@@ -65,9 +65,10 @@ struct SearchView: View {
                         }
                     }//GEOCorder
                 } //Commit
-                )// TextField.padding(10).shadow(color: .blue, radius: 10).cornerRadius(10).fixedSize()
+                )// TextField
+                    .padding(10).shadow(color: .blue, radius: 10).cornerRadius(10).fixedSize()
                     .font(.custom("Ariel", size: 26)).textFieldStyle(RoundedBorderTextFieldStyle())
-                    //.background(Color("background")).cornerRadius(15) // TextField
+                    .background(Color("background")).cornerRadius(15) // TextField
                     .onChange(of: location, perform: { new_loc in
 
                         location = location.capitalized
